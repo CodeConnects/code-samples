@@ -1,0 +1,220 @@
+.clear { clear: both; }
+.float-left { float: left; }
+.float-right { float: right; }
+
+.align-center, .center { text-align: center; }
+.align-right, .right { text-align: right; }
+.align-left, .left { text-align: left; }
+
+.sgf-fixed-buttons { position: fixed; right: 15px; bottom: 30px; width: 65px; z-index: 1055; }
+.sgf-fixed-action-button {
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    border:none;
+    padding:0px;
+    text-align: center;
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    display: block;
+    border-radius: 65px;
+    -webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
+    margin-bottom: 10px;
+    -webkit-transition: -webkit-transform .1s cubic-bezier(1,.5,.8,1);
+    transition: -webkit-transform .1s cubic-bezier(1,.5,.8,1);
+    transition: transform .1s cubic-bezier(1,.5,.8,1);
+    transition: transform .1s cubic-bezier(1,.5,.8,1),-webkit-transform .1s cubic-bezier(1,.5,.8,1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.sgf a { cursor: pointer; text-decoration: none; }
+.sgf, .sgf * { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.meta-box-sortables .sgf input { vertical-align: inherit; }
+
+.sgf-button, .sgf-button-red, .sgf-button-green, .sgf-button-blue, .sgf-button-orange, a.sgf-button, a.sgf-button-red, a.sgf-button-green {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 27px;
+    height: auto;
+    font-size: 13px;
+    border-radius: 3px;
+    padding: 7px 15px;
+    margin: 2px 3px 0 0;
+    border: 1px solid transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: font-size .1s cubic-bezier(1,.5,.8,1),padding .1s cubic-bezier(1,.5,.8,1),margin .1s cubic-bezier(1,.5,.8,1),line-height .1s cubic-bezier(1,.5,.8,1),background-color .1s cubic-bezier(1,.5,.8,1),border-color .1s cubic-bezier(1,.5,.8,1),-webkit-transform .1s cubic-bezier(1,.5,.8,1);
+    transition: font-size .1s cubic-bezier(1,.5,.8,1),padding .1s cubic-bezier(1,.5,.8,1),margin .1s cubic-bezier(1,.5,.8,1),line-height .1s cubic-bezier(1,.5,.8,1),background-color .1s cubic-bezier(1,.5,.8,1),border-color .1s cubic-bezier(1,.5,.8,1),-webkit-transform .1s cubic-bezier(1,.5,.8,1);
+    transition: transform .1s cubic-bezier(1,.5,.8,1),font-size .1s cubic-bezier(1,.5,.8,1),padding .1s cubic-bezier(1,.5,.8,1),margin .1s cubic-bezier(1,.5,.8,1),line-height .1s cubic-bezier(1,.5,.8,1),background-color .1s cubic-bezier(1,.5,.8,1),border-color .1s cubic-bezier(1,.5,.8,1);
+    transition: transform .1s cubic-bezier(1,.5,.8,1),font-size .1s cubic-bezier(1,.5,.8,1),padding .1s cubic-bezier(1,.5,.8,1),margin .1s cubic-bezier(1,.5,.8,1),line-height .1s cubic-bezier(1,.5,.8,1),background-color .1s cubic-bezier(1,.5,.8,1),border-color .1s cubic-bezier(1,.5,.8,1),-webkit-transform .1s cubic-bezier(1,.5,.8,1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.sgf-button-green, a.sgf-button-green, #sgf-fixed-save-button, #sgf-fixed-delete-button { background: green; color: #fff; margin-top: 18px; }
+.sgf-form-action-button:hover, .sgf-fixed-action-button:hover { transform:scale(1.1); }
+.sgf-form-action-button { /*width:100px;*/ font-size:18px; line-height:32px; margin-right:0px; margin-left:20px; margin-bottom:60px; }
+
+.sgf-button-red, a.sgf-button-red { background: red; color: #fff; }
+.sgf-button-blue { background: #2554C7; color: #fff; }
+.sgf-button-orange { background: #c76b25; color: #fff; }
+#sgf-exit-entry { padding: 0px; }
+.sgf-button-red > a { display: inline-block; width: 86px; line-height: 46px; }
+.sgf-fixed-action-button, .sgf-form-action-button a, .sgf-fixed-action-button:hover, .sgf-form-action-button a:hover { color:#fff; }
+
+.sgf-box, .wrap>h2:first-child.action-screen-title {
+    padding: 20px;
+    margin: 0 0 25px 0;
+    background: #fff;
+    border: 1px solid #d4d4d4;
+    -webkit-box-shadow: 0 2px 7px 0 rgba(0,0,0,.07);
+    box-shadow: 0 2px 7px 0 rgba(0,0,0,.07);
+}
+.wrap>h2:first-child.action-screen-title {
+    margin: 0px 10px 20px;
+    color: #c73412;
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 400;
+    padding-bottom: 26px;
+}
+.sgf-entry-wrap>div { float: left; padding: 0 10px; }
+.sgf-entry-right { width: 35%; }
+.sgf-entry-left { width: 65%; clear:left; }
+
+#edit-class-inner-wrap .sgf-entry-right { width: 45%; }
+#edit-class-inner-wrap .sgf-entry-left { width: 55%; }
+.zoom-links table { width: 100%; }
+.zoom-row-head { border-top: 2px solid #aaa; padding-top: 20px; }
+.zoom-row-bottom { padding-bottom: 10px; }
+
+#cview_zoom_links_title th { text-align: left; font-size: 16px; padding-top: 50px; padding-bottom: 10px; text-indent: 60px; }
+.cview_zoom_link span { font-weight: bold; }
+
+.sgf-settings-heading {
+    margin: 0px 0px 24px;
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 200;
+    color: #c73412;
+}
+#sgf_bulk_options_textarea, .sgf-db-form input[type=text], .sgf-settings input[type=email], .sgf-settings input[type=number], .sgf-settings input[type=password], .sgf-settings input[type=search], .sgf-settings input[type=tel], .sgf-settings input[type=text], .sgf-settings input[type=url], .sgf-settings select, .sgf-settings textarea, .select2-container--sgf .select2-selection {
+    font-size: 14px;
+    border: 2px solid #aeaeae;
+    background-color: #fff;
+    color: #333;
+    -webkit-transition: .1s border-color ease-in-out;
+    transition: .1s border-color ease-in-out;
+    vertical-align: baseline;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 6px 0 rgba(0,0,0,.05);
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.05);
+    width: 100%;
+    padding: 6px 12px;
+}
+.sg-pre-reg-edit-form table { border-collapse: collapse; border-spacing: 0px; }
+
+.sg-pre-reg-edit-form th, .sg-pre-reg-edit-form td { padding: 10px; }
+.sg-pre-reg-edit-form th { text-align: right; padding-left:40px; }
+.sg-pre-reg-edit-form td { text-align: left; padding-right:40px; }
+
+.sg-pre-reg-edit-form tr:nth-child(odd) { background-color: #c3c3c3; }
+.sg-pre-reg-edit-form tr:nth-child(even), table.striped>tbody>:nth-child(odd) { background-color: #e3e3e3; }
+table.striped>tbody>:nth-child(even) { background-color: #f8f8f8; }
+
+table.fixed.striped { table-layout: auto; border-collapse: collapse; }
+table.fixed.striped td, table.fixed.striped th  { border: 1px solid #cfcfcf; }
+
+.email.column-email { max-width: 200px; }
+.time_submitted.column-time_submitted { min-width: 74px; }
+
+.db-update-message { background: yellow; float: left; padding: 20px; margin-left: 10px; }
+
+.sg-two-table td, .sg-two-table th { text-align:right; padding-right:10px; }
+.sg-two-table td { min-width: 265px; }
+.sg-two-table td.checkbox-left { text-align: left; }
+.sg-two-table.table-left { float: left; margin-right: 50px; }
+
+.sgf-entry-table.small-details { float:left; margin: 0px 0px 30px 30px; }
+
+table.small-details-table { border-collapse: collapse; background: #f1f1f1; border: 1px solid #bbb; }
+table.small-details-table tr { border-bottom: 1px solid #bbb; }
+table.small-details-table tr:first-child { border-top: 1px solid #bbb; }
+
+.sgf-entry-table.float-left th { text-align: right; padding-right: 8px; vertical-align: top; }
+.sgf-entry-table .small-details-table th { text-align: center; padding: 5px 10px; }
+.small-details-table td { padding: 5px 10px; }
+
+.small-table-title { font-weight: bold; margin-top:0px; }
+
+.class-name-cell, .notes-cell { width: 220px; }
+
+.notes-cell div { padding: 5px; line-height: 24px; background: #f1f1f1; border: 1px solid #bbb; min-height: 200px; font-weight: 600; }
+.notes-row th, .notes-row td { padding-top: 32px; }
+
+.reg-contact-info .notes-cell { width: auto; }
+.reg-contact-info .notes-cell div { min-height: 20px; }
+
+.arrow-links { position: absolute; top:42px; left: 330px; }
+.prev-link, .next-link { display: inline-block; }
+.next-link { margin-left: 50px; }
+
+.prev-link:hover, .next-link:hover, .sg-admin-link:hover { text-decoration: underline; color: #c73412; }
+
+.sgf-class-button { min-width: 160px; }
+.sgf-class-button > a { display: inline-block; min-width: 140px;}
+
+.label-right th { text-align: right !important; padding-right: 10px !important; }
+.label-right th, .label-right td { padding-top: 5px; padding-bottom: 5px; }
+
+.edit-class-choices.label-right th, .edit-class-choices.label-right td { padding-top: 3px; padding-bottom: 3px; }
+
+.two-col-table { width: 48%; float: left; }
+.two-col-table:first-of-type { margin-right: 4%; }
+
+.heading-small-detail { display: inline-block; font-size:14px; font-weight: 600; margin-left: 24px; vertical-align: top; }
+
+.table-section-heading { font-size: 22px; color: #c73412; font-weight: 400; padding: 0px 0px 10px; margin: 0px; text-align: center; }
+.table-section-divider { border-top: 1px solid #c73412; padding: 12px 0px; }
+
+.reg-fee-field { margin-left: 8px; font-size: 15px; }
+
+.sgf-box { position: relative; }
+#download-invoice { position: absolute; bottom: 50px; right: 50px; background: #2554C7; width: auto; font-size: 18px; line-height: 32px; margin: 0px; color: #fff; }
+
+.report-pdf .sgf-settings-heading { text-align:center; font-size: 18px; line-height: 1; margin: 0px 0px 10px; }
+.report-pdf .heading-small-detail { vertical-align: middle; line-height: 18px; }
+.report-pdf .table-section-heading { font-size: 18px; }
+.report-pdf .reg-fee-field { font-size: 13px; }
+.report-pdf table { font-size: 12px; }
+
+.report-pdf .sgf-box { padding: 16px 8px; }
+.report-pdf .payment-details { border: 1px solid #aaa; padding: 15px; }
+
+.report-pdf .label-right th, .report-pdf .label-right td { padding-top: 4px; padding-bottom: 4px; }
+
+#weekly-enrollment-pdf { font-family: Arial, "Helvetica Neue" , Helvetica, sans-serif; }
+#weekly-enrollment-pdf h2 { font-family: Georgia, "Times New Roman", Times, serif; font-size: 22px; }
+#weekly-enrollment-pdf table { width: 100%; }
+#weekly-enrollment-pdf table, #weekly-enrollment-pdf tr, #weekly-enrollment-pdf td, #weekly-enrollment-pdf th { border-collapse: collapse; font-size: 11px; }
+#weekly-enrollment-pdf td, #weekly-enrollment-pdf th { border: 1px solid #888; padding: 4px; }
+
+#change-classes-wrap { display: block; padding: 8px; border: 1px solid #bbb; margin: 0px 0px 0px 10px; position: absolute; top: 22px; left: 235px; }
+#change-classes-wrap label { vertical-align: initial; }
+
+.select-wait { background-color: #ddd; }
+.select-closed { background-color: #bbb; }
+
+@media only screen and (max-width: 960px ) {
+    .sgf-entry-right, .sgf-entry-left {
+        width: 95%;
+    }
+}
